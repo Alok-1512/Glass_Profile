@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  main{
+      min-height: 100vh;
+      min-width: 100vh;
+      display: flex;
+      background: linear-gradient(to right top , #dda0dd , #add8e6);
+      align-items: center;
+      justify-content: center;
+      font-family: "Poppins";
+
+  }
+
+  h1{
+      color: #191970;
+      font-weight: 600;
+      opacity: 0.8;
+
+  }
+
+  h3{
+      color: #191970;
+      font-weight: 400;
+      opacity: 0.8
+  }
+
+  h2 , p{
+      color:#191970;
+      font-weight: 300;
+      opacity: 0.8;
+  }
+
+.glass{
+    background: #fff;
+    border-radius: 2rem;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2) );
+
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex ;
+
+
+}
+.me 
+{
+    border-radius: 50%;
+    margin : 1rem;
+   
+    height: 19vh;
+    width: 18vh;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover 
+{
+    background: linear-gradient(to top right , #dda0dd , #add8e6);
+    border-radius: 2rem;
+}
+
+.dashboard {
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    text-align: center;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2) );
+
+
+}
+
+.link {
+    display: flex;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+
+.link h2 {
+    padding : 0 rem , 1rem;
+}
+
+.portfolio {
+    flex: 2;
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    justify-content: space-between;
+    width: 472px;
+    height: 102px;
+  }
+
+  .card-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+  }
+
+  .progress {
+      background: linear-gradient(to right top , #dda0dd ,#add8e6);
+      border-radius: 1rem;
+      margin: 0;
+      padding: 0.5rem;
+      width: 247%;
+      height: 50% ;
+      position: relative;
+      overflow:hidden;
+
+  }
+
+  .links img {
+    padding:2.5px ;
+  }
+  .status {
+    margin-bottom: 3rem;
+  }
+  .status h2 {
+    text-align: center;
+    text-size-adjust: 150%;
+  }
+  .status input {
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.6)
+    );
+    width: 150%;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.5em ;
+
+
+  }
+
+  .level {
+    font-weight: bold;
+    background: linear-gradient(to right top, #dda0dd, #add8e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6 {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1)
+  );
+  z-index: 2;
+}
+
+
+.circle1 {
+    top: 5%;
+    right: 10%;
+  }
+  .circle2 {
+    bottom: 4%;
+    left: 5%;
+  }
+  .circle3 {
+    top: 7%;
+    left: 1%;
+  }
+  .circle4 {
+    bottom: 6%;
+    right: 2%;
+  }
+  .circle5 {
+    top: 0%;
+    right: 15%;
+  }
+  .circle6 {
+    top: -7%;
+    left: 20%;
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    main {
+      background: #d7c5cf;
+      font-family: "Poppins";
+    }
+    body {
+      background: #d7c5cf;
+    }
+    .glass {
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.1)
+      );
+      height: 100%;
+      min-width: 100%;
+      position: absolute;
+    }
+  
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4,
+    .circle5,
+    .circle6 {
+      display: none;
+    }
+    .dashboard {
+      background: none;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+    .portfolio {
+      position: relative;
+    }
+    .card {
+      background: linear-gradient(
+        to left top,
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.3)
+      );
+    }
+    .status {
+      margin-top: 10%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  
+
